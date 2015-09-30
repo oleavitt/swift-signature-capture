@@ -14,6 +14,7 @@
 		8C0FCF631BBBAE0700A16CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0FCF611BBBAE0700A16CC1 /* LaunchScreen.storyboard */; };
 		8C0FCF6E1BBBAE0700A16CC1 /* SignatureCaptureDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FCF6D1BBBAE0700A16CC1 /* SignatureCaptureDemoTests.swift */; };
 		8C0FCF791BBBAE0700A16CC1 /* SignatureCaptureDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FCF781BBBAE0700A16CC1 /* SignatureCaptureDemoUITests.swift */; };
+		E530874F170D17C6A391528A /* Pods_SignatureCaptureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34D6A5B41747F39F66C05AB /* Pods_SignatureCaptureDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FF394834BA706C8661DC360 /* Pods-SignatureCaptureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignatureCaptureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignatureCaptureDemo/Pods-SignatureCaptureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5D358EB137CC2EBAED1D58BC /* Pods-SignatureCaptureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignatureCaptureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignatureCaptureDemo/Pods-SignatureCaptureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0FCF551BBBAE0700A16CC1 /* SignatureCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignatureCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0FCF581BBBAE0700A16CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C0FCF5A1BBBAE0700A16CC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		8C0FCF741BBBAE0700A16CC1 /* SignatureCaptureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignatureCaptureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0FCF781BBBAE0700A16CC1 /* SignatureCaptureDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureCaptureDemoUITests.swift; sourceTree = "<group>"; };
 		8C0FCF7A1BBBAE0700A16CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34D6A5B41747F39F66C05AB /* Pods_SignatureCaptureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignatureCaptureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E530874F170D17C6A391528A /* Pods_SignatureCaptureDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E88407026A16780000C2835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C34D6A5B41747F39F66C05AB /* Pods_SignatureCaptureDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75CD6F800943E6D8D26D8928 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D358EB137CC2EBAED1D58BC /* Pods-SignatureCaptureDemo.debug.xcconfig */,
+				0FF394834BA706C8661DC360 /* Pods-SignatureCaptureDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C0FCF4C1BBBAE0700A16CC1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				8C0FCF6C1BBBAE0700A16CC1 /* SignatureCaptureDemoTests */,
 				8C0FCF771BBBAE0700A16CC1 /* SignatureCaptureDemoUITests */,
 				8C0FCF561BBBAE0700A16CC1 /* Products */,
+				75CD6F800943E6D8D26D8928 /* Pods */,
+				1E88407026A16780000C2835 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C0FCF7D1BBBAE0800A16CC1 /* Build configuration list for PBXNativeTarget "SignatureCaptureDemo" */;
 			buildPhases = (
+				5340AD49851C5E6A9A9ECC2C /* Check Pods Manifest.lock */,
 				8C0FCF511BBBAE0700A16CC1 /* Sources */,
 				8C0FCF521BBBAE0700A16CC1 /* Frameworks */,
 				8C0FCF531BBBAE0700A16CC1 /* Resources */,
+				D6225256A9C7B5435928D66E /* Embed Pods Frameworks */,
+				B6477270B2F60CCF82649F5D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5340AD49851C5E6A9A9ECC2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6477270B2F60CCF82649F5D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignatureCaptureDemo/Pods-SignatureCaptureDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6225256A9C7B5435928D66E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignatureCaptureDemo/Pods-SignatureCaptureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C0FCF511BBBAE0700A16CC1 /* Sources */ = {
@@ -396,9 +471,11 @@
 		};
 		8C0FCF7E1BBBAE0800A16CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D358EB137CC2EBAED1D58BC /* Pods-SignatureCaptureDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SignatureCaptureDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.odysseyinc.SignatureCaptureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,9 +484,11 @@
 		};
 		8C0FCF7F1BBBAE0800A16CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF394834BA706C8661DC360 /* Pods-SignatureCaptureDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SignatureCaptureDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.odysseyinc.SignatureCaptureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +562,7 @@
 				8C0FCF7F1BBBAE0800A16CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C0FCF801BBBAE0800A16CC1 /* Build configuration list for PBXNativeTarget "SignatureCaptureDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +571,7 @@
 				8C0FCF821BBBAE0800A16CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C0FCF831BBBAE0800A16CC1 /* Build configuration list for PBXNativeTarget "SignatureCaptureDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +580,7 @@
 				8C0FCF851BBBAE0800A16CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

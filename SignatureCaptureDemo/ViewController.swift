@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SwiftSignatureView
 
 class ViewController: UIViewController {
+    @IBOutlet weak var signatureView: SwiftSignatureView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +23,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func didTouchClear(sender: AnyObject) {
+        signatureView.clear()
+    }
 }
 

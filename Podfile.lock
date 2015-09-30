@@ -1,0 +1,10 @@
+PODS:
+  - SwiftSignatureView (0.0.7)
+
+DEPENDENCIES:
+  - SwiftSignatureView (~> 0.0)
+
+SPEC CHECKSUMS:
+  SwiftSignatureView: 71ff203bf5774bae5ed7c69d232eb0c099ea5bef
+
+COCOAPODS: 0.38.2
